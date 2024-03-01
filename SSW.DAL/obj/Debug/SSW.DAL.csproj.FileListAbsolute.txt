@@ -1,0 +1,6 @@
+K:\asp_net_web\SSW\SSW.DAL\bin\Debug\SSW.DAL.dll
+K:\asp_net_web\SSW\SSW.DAL\bin\Debug\SSW.DAL.pdb
+K:\asp_net_web\SSW\SSW.DAL\obj\Debug\SSW.DAL.csproj.AssemblyReference.cache
+K:\asp_net_web\SSW\SSW.DAL\obj\Debug\SSW.DAL.csproj.CoreCompileInputs.cache
+K:\asp_net_web\SSW\SSW.DAL\obj\Debug\SSW.DAL.dll
+K:\asp_net_web\SSW\SSW.DAL\obj\Debug\SSW.DAL.pdb

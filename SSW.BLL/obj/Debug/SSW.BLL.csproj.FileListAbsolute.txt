@@ -1,0 +1,9 @@
+K:\asp_net_web\SSW\SSW.BLL\bin\Debug\SSW.BLL.dll
+K:\asp_net_web\SSW\SSW.BLL\bin\Debug\SSW.BLL.pdb
+K:\asp_net_web\SSW\SSW.BLL\bin\Debug\SSW.DAL.dll
+K:\asp_net_web\SSW\SSW.BLL\bin\Debug\SSW.DAL.pdb
+K:\asp_net_web\SSW\SSW.BLL\obj\Debug\SSW.BLL.csproj.AssemblyReference.cache
+K:\asp_net_web\SSW\SSW.BLL\obj\Debug\SSW.BLL.csproj.CoreCompileInputs.cache
+K:\asp_net_web\SSW\SSW.BLL\obj\Debug\SSW.BLL.csproj.CopyComplete
+K:\asp_net_web\SSW\SSW.BLL\obj\Debug\SSW.BLL.dll
+K:\asp_net_web\SSW\SSW.BLL\obj\Debug\SSW.BLL.pdb

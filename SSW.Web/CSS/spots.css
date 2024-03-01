@@ -1,0 +1,89 @@
+﻿/* ************ 内容栏 ************ */
+.content {
+    height: 930px;
+    width: 100%;
+    margin-top: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.body_shadow {
+    background-color: #fff;
+    /* 盒子阴影 */
+    box-shadow: 0px 2px 3px 0px rgba(118, 118, 118, 0.2);
+}
+
+.content > ul {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+
+/* 排行榜框 */
+.content > ul > li {
+    width: 1200px;
+    height: 170px;
+    display: block;
+    overflow: hidden;
+    margin-left: 150px;
+    border-radius: 11px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+    /*排行榜内容背景颜色*/
+    background-color: #fff;
+}
+
+.content > ul > li:nth-child(n+2) {
+    margin-top: 20px;
+}
+
+.content > ul > li:hover {
+    display: block;
+    cursor: pointer;
+    /*排行榜内容背景颜色-鼠标覆盖时*/
+    background-color: rgb(240,60,20);
+    box-shadow: 7px 5px 6px #808080;
+}
+
+.content_p > div {
+    width: 1200px;
+    height: 170px;
+}
+
+.content_p>div>div {
+    float: left;
+    height: 170px;
+    width: 200px;
+    
+}
+.content_p > div > div > img {
+    height: 170px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.content_p > div > p {
+    float: left;
+    display: block;
+    height: 170px;
+    width: 1000px;
+    /*border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: #000000;*/
+    padding: 20px 10px 10px 10px;
+    /* 排行榜内容字体设置 */
+    font-size: 20px;
+    text-align: left;
+    text-indent: 2em;
+    line-height: 30px;
+    word-spacing: 4px;
+}
+
+.content_p > div > p:nth-child(-n+2) ::first-letter {
+    float: left;
+    font-size: 2em;
+    margin: 0 2px 2px 0;
+}

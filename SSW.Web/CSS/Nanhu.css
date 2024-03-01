@@ -1,0 +1,276 @@
+﻿body {
+    background: #f3f5f7;
+}
+
+/* ************ 导航栏 ************ */
+.header_slide {
+    position: fixed;
+    height: 200px;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.header {
+    height: 60px;
+    background-color: #5565e5; /*导航栏背景颜色*/
+    margin-top: 130px;
+    margin-bottom: 30px;
+}
+
+.logo_left {
+    float: left;
+    height: 60px;
+    width: 100px;
+    margin-left: 110px;
+}
+
+.logo_left a img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.header nav {
+    float: left;
+    margin-left: 170px;  /*"概述"距离南湖logo 60px*/
+    height: 60px;
+}
+
+.header nav ul li {
+    float: left;
+    height: 60px;
+    margin-right: 26px;
+    padding-top: 10px;
+}
+
+.header nav ul li a {
+    display: block;
+    padding: 0 9px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    color: #050505;
+}
+
+.header nav ul li a:hover {
+    border-bottom: 2px solid #e30000;
+    opacity: 0.5;
+}
+
+/* ************ 导航栏背景 ************ */
+.header_bcg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 100%;
+    z-index: -1;
+}
+
+.page_top_img {
+    float: left;
+    height: 200px;
+    width: 100%;
+}
+
+.page_top_img img {
+    height: 200px;
+    width: 100%;
+    object-fit: fill;
+}
+
+/* ************ 版心 ************ */
+
+.body_shadow {
+    background-color: #fff;
+    /* 盒子阴影 */
+    box-shadow: 0px 2px 3px 0px rgba(118, 118, 118, 0.2);
+}
+
+/* 轮播图 */
+.carousel_map {
+    position: relative;
+    overflow: hidden;
+    margin-top: 240px;
+    padding-top: 20px;
+    width: 1200px;
+    height: 420px;
+}
+
+.pictures {
+    position: absolute;
+    margin-left: 200px;
+    padding-left: 0;
+    width: 802px;
+    height: 422px;
+    border: 1px solid #808080;
+}
+
+.pictures li {
+    position: absolute;
+    width: 802px;
+    height: 422px;
+}
+
+.carousel_map_pictures {
+    opacity: 0;
+}
+
+.carousel_map_pictures img {
+    object-fit: fill;
+    width: 802px;
+    height: 422px;
+}
+
+.carousel_map_pictures:nth-child(1) {
+    opacity: 1;
+}
+
+
+.btn_left {
+    position: absolute;
+    width: 35px;
+    height: 70px;
+    color: #ccc;
+    margin-top: 200px;
+    margin-left: 210px;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 0 5px 5px 0;
+    font-size: 27px;
+}
+
+.btn_left:hover {
+    background-color: #00000050;
+    color: #fff;
+    cursor: default;
+}
+
+.btn_right {
+    position: absolute;
+    width: 35px;
+    height: 70px;
+    color: #ccc;
+    margin-top: 200px;
+    margin-left: 962px;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 0 5px 5px 0;
+    font-size: 27px;
+}
+
+.btn_right:hover {
+    background-color: #00000050;
+    color: #fff;
+    cursor: default;
+}
+
+/*段落*/
+.par {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-indent: 38px;
+    font-size: 18px;
+    font-style: normal;
+}
+
+.par_1 {
+    position: relative;
+    overflow: hidden;
+    height: 800px;
+    width: 1200px;
+    padding-bottom: 30px;
+}
+.par_1 h3 {
+    display: block;
+    margin-top: 30px;
+}
+.par_2 {
+    position: relative;
+    overflow: hidden;
+    height: 800px;
+    width: 1200px;
+    background-color: #f3f4f8;
+}
+.par_2 h3 {
+    display: block;
+    margin-top: 30px;
+}
+
+/*版心图片*/
+.page_centre_img {
+    height: 422px;
+    width: 802px;
+    margin-top: 30px;
+    margin-left: 200px;
+}
+.page_centre_img img {
+    object-fit: fill;
+}
+
+/*版权*/
+.copyright {
+    position: relative;
+    height: 210px;
+    width: 100%;
+    margin-top: 60px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.cr_top {
+    position: absolute;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.cr_top_left {
+    float: left;
+    height: 60px;
+    margin-left: 240px;
+}
+
+.cr_top_middle {
+    float: left;
+    height: 60px;
+    margin-left: 340px;
+}
+
+.cr_top_right {
+    float: left;
+    height: 60px;
+    margin-left: 240px;
+}
+
+
+.cr_top_right ul li{
+    display: block;
+    float: left;
+    margin-left: 40px;
+}
+
+#underline {
+    position: absolute;
+    height: 64px;
+    width: 1200px;
+    margin-left: 164px;
+    padding-top: 62px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #fff;
+}
+
+.cr_bottom {
+    position: absolute;
+    height: 140px;
+    margin-top: 70px;
+    margin-left: 164px;
+}
+
+.cr_shadow {
+    background-color: #272831;
+    /* 盒子阴影 */
+    box-shadow: 0px 2px 3px 0px rgba(118, 118, 118, 0.2);
+}

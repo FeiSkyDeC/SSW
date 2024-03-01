@@ -1,0 +1,504 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9F77781D-6C86-4203-9C5D-EE2C66D10FB3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SSW.Web</RootNamespace>
+    <AssemblyName>SSW.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44302</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\UsrInfo.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App_Web\index.aspx" />
+    <Content Include="App_Web\spots.aspx" />
+    <Content Include="App_Web\Spots\NanhuSpot\Nanhu.aspx" />
+    <Content Include="App_Web\Spots\NanhuSpot\NanhuCulture.aspx" />
+    <Content Include="App_Web\Spots\NanhuSpot\NanhuFamous.aspx" />
+    <Content Include="App_Web\Spots\NanhuSpot\NanhuHistory.aspx" />
+    <Content Include="App_Web\Spots\QiyuanSpot\Qiyuan.aspx" />
+    <Content Include="App_Web\Spots\WuzhenSpot\Wuzhen.aspx" />
+    <Content Include="App_Web\Spots\WuzhenSpot\WuzhenActivity.aspx" />
+    <Content Include="App_Web\Spots\WuzhenSpot\WuzhenCulture.aspx" />
+    <Content Include="App_Web\Spots\WuzhenSpot\WuzhenDelicacy.aspx" />
+    <Content Include="App_Web\Spots\XitangSpot\Xitang.aspx" />
+    <Content Include="App_Web\Spots\XitangSpot\XitangFood.aspx" />
+    <Content Include="App_Web\Spots\XitangSpot\XitangHistory.aspx" />
+    <Content Include="App_Web\Spots\XitangSpot\XitangScenery.aspx" />
+    <Content Include="App_Web\Spots\YanguanSpot\Yanguan.aspx" />
+    <Content Include="App_Web\User\Control.aspx" />
+    <Content Include="App_Web\User\Register.aspx" />
+    <Content Include="App_Web\User\Logon.aspx" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="CSS\index.css" />
+    <Content Include="CSS\init.css" />
+    <Content Include="CSS\Logon.css" />
+    <Content Include="CSS\Nanhu.css" />
+    <Content Include="CSS\NanhuCulture.css" />
+    <Content Include="CSS\NanhuFamous.css" />
+    <Content Include="CSS\NanhuHistory.css" />
+    <Content Include="CSS\header_footer.css" />
+    <Content Include="CSS\Register.css" />
+    <Content Include="CSS\spots.css" />
+    <Content Include="CSS\Wuzhen.css" />
+    <Content Include="CSS\Xitang.css" />
+    <Content Include="CSS\Yanguan.css" />
+    <Content Include="Resources\Gif\mouse_passing.gif" />
+    <Content Include="Resources\Gif\mouse_passing2.gif" />
+    <Content Include="Resources\Images\IndexImg\beijin.png" />
+    <Content Include="Resources\Images\IndexImg\dbj.jpg" />
+    <Content Include="Resources\Images\IndexImg\fbt.jpg" />
+    <Content Include="Resources\Images\IndexImg\hlw.jpg" />
+    <Content Include="Resources\Images\IndexImg\jx.jpg" />
+    <Content Include="Resources\Images\IndexImg\jx_1.jpg" />
+    <Content Include="Resources\Images\IndexImg\jx_2.jpg" />
+    <Content Include="Resources\Images\IndexImg\mjb.jpg" />
+    <Content Include="Resources\Images\IndexImg\mjb1.jpg" />
+    <Content Include="Resources\Images\IndexImg\mr.jpg" />
+    <Content Include="Resources\Images\IndexImg\mr1.jpg" />
+    <Content Include="Resources\Images\IndexImg\mr2.jpg" />
+    <Content Include="Resources\Images\IndexImg\nh1.jpg" />
+    <Content Include="Resources\Images\IndexImg\nh2.jpg" />
+    <Content Include="Resources\Images\IndexImg\rw.jpg" />
+    <Content Include="Resources\Images\IndexImg\wz.jpg" />
+    <Content Include="Resources\Images\IndexImg\zjjx.jpg" />
+    <Content Include="Resources\Images\IndexImg\zjjx1.jpg" />
+    <Content Include="Resources\Images\IndexImg\zjjx2.jpg" />
+    <Content Include="Resources\Images\IndexImg\zjjx3.jpg" />
+    <Content Include="Resources\Images\NanhuImg\facebook.png" />
+    <Content Include="Resources\Images\NanhuImg\Nanhu-history-pic-1.jpg" />
+    <Content Include="Resources\Images\NanhuImg\Nanhu-history-pic-2.jpg" />
+    <Content Include="Resources\Images\NanhuImg\nanhu-logo.png" />
+    <Content Include="Resources\Images\NanhuImg\Nanhu-pic-1.png" />
+    <Content Include="Resources\Images\NanhuImg\Nanhu-pic-2.png" />
+    <Content Include="Resources\Images\NanhuImg\Nanhu-pic-3.png" />
+    <Content Include="Resources\Images\NanhuImg\Nanhu-pic-4.png" />
+    <Content Include="Resources\Images\NanhuImg\Nanhu-pic-5.png" />
+    <Content Include="Resources\Images\NanhuImg\NanhuCulture-pic-2.jpg" />
+    <Content Include="Resources\Images\NanhuImg\NanhuCulture-pic-1.jpg" />
+    <Content Include="Resources\Images\NanhuImg\NanhuFamous-pic-姜维贤.png" />
+    <Content Include="Resources\Images\NanhuImg\NanhuFamous-pic-沈钧儒.jpg" />
+    <Content Include="Resources\Images\NanhuImg\NanhuFamous-pic-褚辅成 - 复制.jpg" />
+    <Content Include="Resources\Images\NanhuImg\NanhuFamous-pic-褚辅成.jpg" />
+    <Content Include="Resources\Images\NanhuImg\page-centre-1.png" />
+    <Content Include="Resources\Images\NanhuImg\page-centre-2.png" />
+    <Content Include="Resources\Images\NanhuImg\page-top-img-2.png" />
+    <Content Include="Resources\Images\NanhuImg\page-top-img-1.png" />
+    <Content Include="Resources\Images\NanhuImg\weibo.png" />
+    <Content Include="Resources\Images\NanhuImg\weixin.png" />
+    <Content Include="Resources\Images\QiyuanImg\qy1.jpg" />
+    <Content Include="Resources\Images\QiyuanImg\qy2.jpg" />
+    <Content Include="Resources\Images\QiyuanImg\qy3.jpg" />
+    <Content Include="Resources\Images\QiyuanImg\qy4.jpg" />
+    <Content Include="Resources\Images\QiyuanImg\qydbj.jpg" />
+    <Content Include="Resources\Images\Spots\header.jpg" />
+    <Content Include="Resources\Images\Spots\return_button.png" />
+    <Content Include="Resources\Images\Spots\乌镇.jpg" />
+    <Content Include="Resources\Images\Spots\南湖.jpg" />
+    <Content Include="Resources\Images\Spots\盐官.jpg" />
+    <Content Include="Resources\Images\Spots\绮园.jpg" />
+    <Content Include="Resources\Images\Spots\西塘.jpg" />
+    <Content Include="Resources\Images\ToptjImg\Jxtop0.jpg" />
+    <Content Include="Resources\Images\ToptjImg\Nhtop1.jpg" />
+    <Content Include="Resources\Images\ToptjImg\Qytop2.jpg" />
+    <Content Include="Resources\Images\ToptjImg\Wztop3.jpg" />
+    <Content Include="Resources\Images\ToptjImg\Xttop4.jpg" />
+    <Content Include="Resources\Images\ToptjImg\Ygtop5.jpg" />
+    <Content Include="Resources\Images\User\bj1.jpg" />
+    <Content Include="Resources\Images\User\bj2.jpg" />
+    <Content Include="Resources\Images\User\cb1.jpg" />
+    <Content Include="Resources\Images\User\cb2.jpg" />
+    <Content Include="Resources\Images\User\mima.png" />
+    <Content Include="Resources\Images\User\yh.png" />
+    <Content Include="Resources\Images\WuzhenImg\1.jpg" />
+    <Content Include="Resources\Images\WuzhenImg\2.jpg" />
+    <Content Include="Resources\Images\WuzhenImg\3.png" />
+    <Content Include="Resources\Images\WuzhenImg\jd_dj.jpg" />
+    <Content Include="Resources\Images\WuzhenImg\jd_gg.jpg" />
+    <Content Include="Resources\Images\WuzhenImg\jd_ggc.jpg" />
+    <Content Include="Resources\Images\WuzhenImg\jd_hgx.jpg" />
+    <Content Include="Resources\Images\WuzhenImg\jd_hgx_d.jpg" />
+    <Content Include="Resources\Images\WuzhenImg\jd_jc.jpg" />
+    <Content Include="Resources\Images\WuzhenImg\jd_ldy.jpg" />
+    <Content Include="Resources\Images\WuzhenImg\jd_pyx.jpg" />
+    <Content Include="Resources\Images\WuzhenImg\jd_q.jpg" />
+    <Content Include="Resources\Images\WuzhenImg\jd_qc.jpg" />
+    <Content Include="Resources\Images\WuzhenImg\ms_1.jpg" />
+    <Content Include="Resources\Images\WuzhenImg\ms_2.jpg" />
+    <Content Include="Resources\Images\WuzhenImg\ms_3.jpg" />
+    <Content Include="Resources\Images\WuzhenImg\ms_4.jpg" />
+    <Content Include="Resources\Images\WuzhenImg\ms_5.jpg" />
+    <Content Include="Resources\Images\WuzhenImg\ms_5htg.jpg" />
+    <Content Include="Resources\Images\WuzhenImg\ms_5qt.jpg" />
+    <Content Include="Resources\Images\WuzhenImg\ms_btr.png" />
+    <Content Include="Resources\Images\WuzhenImg\ms_dsg.jpg" />
+    <Content Include="Resources\Images\WuzhenImg\ms_gsb.jpg" />
+    <Content Include="Resources\Images\WuzhenImg\ms_qt.jpg" />
+    <Content Include="Resources\Images\WuzhenImg\ms_sbj.jpeg" />
+    <Content Include="Resources\Images\WuzhenImg\ms_xdc.png" />
+    <Content Include="Resources\Images\WuzhenImg\ms_y.jpg" />
+    <Content Include="Resources\Images\WuzhenImg\wh_dg.jpg" />
+    <Content Include="Resources\Images\WuzhenImg\wh_dw.jpg" />
+    <Content Include="Resources\Images\WuzhenImg\wh_ls.jpg" />
+    <Content Include="Resources\Images\WuzhenImg\wh_xs1.jpg" />
+    <Content Include="Resources\Images\WuzhenImg\wh_xs2.jpg" />
+    <Content Include="Resources\Images\WuzhenImg\wz.jpg" />
+    <Content Include="Resources\Images\XitangImg\1.png" />
+    <Content Include="Resources\Images\XitangImg\2-1.jpg" />
+    <Content Include="Resources\Images\XitangImg\2-2.jpg" />
+    <Content Include="Resources\Images\XitangImg\2-3.jpg" />
+    <Content Include="Resources\Images\XitangImg\2-4.jpg" />
+    <Content Include="Resources\Images\XitangImg\2-5.jpeg" />
+    <Content Include="Resources\Images\XitangImg\2-6.jpg" />
+    <Content Include="Resources\Images\XitangImg\4-1.jpg" />
+    <Content Include="Resources\Images\XitangImg\4-21.png" />
+    <Content Include="Resources\Images\XitangImg\4-22.png" />
+    <Content Include="Resources\Images\XitangImg\4-23.png" />
+    <Content Include="Resources\Images\XitangImg\4-24.png" />
+    <Content Include="Resources\Images\XitangImg\4-3.jpg" />
+    <Content Include="Resources\Images\XitangImg\4-4.jpg" />
+    <Content Include="Resources\Images\XitangImg\4-51.png" />
+    <Content Include="Resources\Images\XitangImg\4-52.png" />
+    <Content Include="Resources\Images\XitangImg\4-53.png" />
+    <Content Include="Resources\Images\XitangImg\5-1.jpg" />
+    <Content Include="Resources\Images\XitangImg\5-2.png" />
+    <Content Include="Resources\Images\XitangImg\5-3.jpg" />
+    <Content Include="Resources\Images\XitangImg\5-4.jpg" />
+    <Content Include="Resources\Images\XitangImg\5-5.png" />
+    <Content Include="Resources\Images\XitangImg\5-6.png" />
+    <Content Include="Resources\Images\XitangImg\beijing1.jpg" />
+    <Content Include="Resources\Images\XitangImg\beijing2.jpg" />
+    <Content Include="Resources\Images\XitangImg\beijing3.jpg" />
+    <Content Include="Resources\Images\XitangImg\beijing4-1.jpg" />
+    <Content Include="Resources\Images\XitangImg\beijing4.jpg" />
+    <Content Include="Resources\Images\XitangImg\dbj.jpg" />
+    <Content Include="Resources\Images\XitangImg\dhl.jpg" />
+    <Content Include="Resources\Images\XitangImg\dw1.png" />
+    <Content Include="Resources\Images\XitangImg\dw2.png" />
+    <Content Include="Resources\Images\XitangImg\dw3.png" />
+    <Content Include="Resources\Images\YanguanImg\Yanguan-hd-bg.jpg" />
+    <Content Include="Resources\Images\YanguanImg\YG_1.jpg" />
+    <Content Include="Resources\Images\YanguanImg\YG_2.jpg" />
+    <Content Include="Resources\Images\YanguanImg\YG_3.jpg" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Scripts\jquery-3.6.4.intellisense.js" />
+    <Content Include="Scripts\Index\index.js" />
+    <Content Include="Scripts\jquery-3.6.4.js" />
+    <Content Include="Scripts\jquery-3.6.4.min.js" />
+    <Content Include="Scripts\jquery-3.6.4.slim.js" />
+    <Content Include="Scripts\jquery-3.6.4.slim.min.js" />
+    <Content Include="Scripts\spots.js" />
+    <Content Include="Scripts\Spots\NanhuSpot\Nanhu.js" />
+    <Content Include="Scripts\Spots\NanhuSpot\NanhuCulture.js" />
+    <Content Include="Scripts\Spots\NanhuSpot\NanhuFamous.js" />
+    <Content Include="Scripts\Spots\NanhuSpot\NanhuHistory.js" />
+    <Content Include="Scripts\Spots\XitangSpot\Xitang.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Web\User\Control.aspx.cs">
+      <DependentUpon>Control.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Web\User\Control.aspx.designer.cs">
+      <DependentUpon>Control.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Content Include="App_Code\Account.cs" />
+    <Compile Include="App_Web\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Web\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Web\spots.aspx.cs">
+      <DependentUpon>spots.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Web\spots.aspx.designer.cs">
+      <DependentUpon>spots.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Web\Spots\NanhuSpot\Nanhu.aspx.cs">
+      <DependentUpon>Nanhu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Web\Spots\NanhuSpot\Nanhu.aspx.designer.cs">
+      <DependentUpon>Nanhu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Web\Spots\NanhuSpot\NanhuCulture.aspx.cs">
+      <DependentUpon>NanhuCulture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Web\Spots\NanhuSpot\NanhuCulture.aspx.designer.cs">
+      <DependentUpon>NanhuCulture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Web\Spots\NanhuSpot\NanhuFamous.aspx.cs">
+      <DependentUpon>NanhuFamous.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Web\Spots\NanhuSpot\NanhuFamous.aspx.designer.cs">
+      <DependentUpon>NanhuFamous.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Web\Spots\NanhuSpot\NanhuHistory.aspx.cs">
+      <DependentUpon>NanhuHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Web\Spots\NanhuSpot\NanhuHistory.aspx.designer.cs">
+      <DependentUpon>NanhuHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Web\Spots\QiyuanSpot\Qiyuan.aspx.cs">
+      <DependentUpon>Qiyuan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Web\Spots\QiyuanSpot\Qiyuan.aspx.designer.cs">
+      <DependentUpon>Qiyuan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Web\Spots\WuzhenSpot\Wuzhen.aspx.cs">
+      <DependentUpon>Wuzhen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Web\Spots\WuzhenSpot\Wuzhen.aspx.designer.cs">
+      <DependentUpon>Wuzhen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Web\Spots\WuzhenSpot\WuzhenActivity.aspx.cs">
+      <DependentUpon>WuzhenActivity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Web\Spots\WuzhenSpot\WuzhenActivity.aspx.designer.cs">
+      <DependentUpon>WuzhenActivity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Web\Spots\WuzhenSpot\WuzhenCulture.aspx.cs">
+      <DependentUpon>WuzhenCulture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Web\Spots\WuzhenSpot\WuzhenCulture.aspx.designer.cs">
+      <DependentUpon>WuzhenCulture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Web\Spots\WuzhenSpot\WuzhenDelicacy.aspx.cs">
+      <DependentUpon>WuzhenDelicacy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Web\Spots\WuzhenSpot\WuzhenDelicacy.aspx.designer.cs">
+      <DependentUpon>WuzhenDelicacy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Web\Spots\XitangSpot\Xitang.aspx.cs">
+      <DependentUpon>Xitang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Web\Spots\XitangSpot\Xitang.aspx.designer.cs">
+      <DependentUpon>Xitang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Web\Spots\XitangSpot\XitangFood.aspx.cs">
+      <DependentUpon>XitangFood.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Web\Spots\XitangSpot\XitangFood.aspx.designer.cs">
+      <DependentUpon>XitangFood.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Web\Spots\XitangSpot\XitangHistory.aspx.cs">
+      <DependentUpon>XitangHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Web\Spots\XitangSpot\XitangHistory.aspx.designer.cs">
+      <DependentUpon>XitangHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Web\Spots\XitangSpot\XitangScenery.aspx.cs">
+      <DependentUpon>XitangScenery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Web\Spots\XitangSpot\XitangScenery.aspx.designer.cs">
+      <DependentUpon>XitangScenery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Web\Spots\YanguanSpot\Yanguan.aspx.cs">
+      <DependentUpon>Yanguan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Web\Spots\YanguanSpot\Yanguan.aspx.designer.cs">
+      <DependentUpon>Yanguan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Web\User\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Web\User\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Web\User\Logon.aspx.cs">
+      <DependentUpon>Logon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Web\User\Logon.aspx.designer.cs">
+      <DependentUpon>Logon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.6.4.slim.min.map" />
+    <Content Include="Scripts\jquery-3.6.4.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SSW.BLL\SSW.BLL.csproj">
+      <Project>{2b4ec2f6-a370-4b42-a5be-76023d935224}</Project>
+      <Name>SSW.BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Scripts\Spots\WuzhenSpot\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>46072</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44302/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

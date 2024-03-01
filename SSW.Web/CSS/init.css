@@ -1,0 +1,57 @@
+﻿/* ------初始化界面------ */
+* {
+    /*内外边距*/
+    margin: 0;
+    padding: 0;
+    /*内嵌模式*/
+    box-sizing: border-box;
+}
+
+/* 清除标签前圆点·*/
+li {
+    list-style: none;
+}
+
+/* 清除超链接下划线 */
+a {
+    text-decoration: none;
+}
+
+/* 清除浮动影响 */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* 版心 */
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* ------初始化界面完成------ */
+
+/* ------功能区开始------ */
+/*一键返回顶部*/
+#return_button {
+    position: sticky;
+    height: 60px;
+    width: 60px;
+    float: right;
+    right: 50px;
+    top: 600px;
+    border-radius: 3px 4px;
+    background-color: #7e12b7;
+}
+
+#return_button > img {
+    height: 60px;
+    width: 60px;
+    object-fit: fill;
+    overflow: hidden;
+}
+/* ------功能区结束------ */

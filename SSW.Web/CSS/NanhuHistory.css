@@ -1,0 +1,45 @@
+﻿.NhH_block1 {
+    height: 1200px; /*内容长度*/
+    margin-top: 260px;
+}
+
+#NhH_block1_title {
+    height: 60px;
+    line-height: 60px;
+    width: 150px;
+    font-family: KaiTi;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.NhH_par_picture {
+    height: 240px;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.NhH_par_picture > img {
+    height: 240px;
+    width: 600px;
+    object-fit: fill;
+    overflow: hidden;
+}
+
+.NhH_par {
+    padding: 25px 32px;
+    height:800px;         /*段落长度*/
+    width: 1200px;
+}
+
+.NhH_par p {
+    font-size: 18px;
+    font-style: normal;
+    font-family: "楷体";
+    text-align: left;
+    text-indent: 2em;
+    vertical-align: middle;
+}
+
+#NhH_par_p_last2 {
+    margin-top: 25px;
+}
